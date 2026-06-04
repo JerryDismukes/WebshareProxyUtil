@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "WebshareProxyUtil": {
+      "commandName": "Project"
+    },
+    "WebshareProxyUtil Headless": {
+      "commandName": "Project",
+      "commandLineArgs": "--headless"
+    }
+  }
+}

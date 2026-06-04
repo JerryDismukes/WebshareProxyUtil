@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AssemblyName>WebshareProxyUtil</AssemblyName>
+		<StartupObject>IPMonitorApp.Program</StartupObject>
+		<Product>Webshare Proxy Utility</Product>
+		<Description>Webshare proxy IP authorization and internet monitor utility</Description>
+		<Version>0.1.0-alpha</Version>
+		<FileVersion>0.1.0.0</FileVersion>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+		<Authors>Jerry Dismukes</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeAllContentForSelfExtract>false</IncludeAllContentForSelfExtract>
+		<ApplicationIcon>monitor.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="monitor.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\IPMonitorCore\IPMonitorCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Icons\icon_ok.ico" />
+		<EmbeddedResource Include="Icons\icon_warn.ico" />
+		<EmbeddedResource Include="Icons\icon_err.ico" />
+		<EmbeddedResource Include="Icons\icon_paused.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+	</ItemGroup>
+</Project>

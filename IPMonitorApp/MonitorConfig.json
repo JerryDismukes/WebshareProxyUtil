@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "debug": false,
+    "apiKey": "",
+    "checkIntervalSeconds": 30,
+    "pingIntervalSeconds": 5,
+    "ipCheckIntervalSeconds": 60,
+    "maxLogSizeKB": 500,
+    "maxLogFiles": 5,
+    "MaxFailures": 5,
+    "heartbeatIntervalMinutes": 60,
+    "pingTargets": [
+      "8.8.8.8",
+      "1.1.1.1",
+      "github.com",
+      "api.ipify.org"
+    ]
+  },
+  "targets": [],
+  "webshare": {
+    "Enabled": true,
+    "Url": "https://proxy.webshare.io/api/v2/proxy/ipauthorization/whatsmyip/",
+    "IntervalSeconds": 60,
+    "ApiKeyCredentialTarget": "WebshareProxyUtil:WebshareAPIKey"
+  }
+}

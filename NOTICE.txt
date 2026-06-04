@@ -1,0 +1,12 @@
+WebshareProxyUtil - Alpha Sample
+
+This project is provided as-is as alpha/sample code. It is intended for testing, evaluation, and as a starting point for building a Webshare proxy IP authorization utility.
+
+This is not production-ready software. No warranty, guarantee, or support commitment is provided.
+
+Important notes:
+- Review all code before using it in a production environment.
+- Keep your Webshare API key private.
+- Do not commit real API keys, logs, machine-specific config files, or published binaries that contain local state.
+- The utility can create a boot-time scheduled task that runs as SYSTEM. Review the task behavior before enabling it on managed systems.
+- The shared config API key value is DPAPI-protected for the local machine so the SYSTEM scheduled task can decrypt it on the same computer. It is not portable to other computers.

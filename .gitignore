@@ -1,0 +1,54 @@
+# Build output
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+publish/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Runtime output
+Logs/
+*.log
+monitor.log*
+
+# Local/runtime config
+MonitorConfig.local.json
+appsettings.local.json
+*.local.json
+
+# Windows / OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Test results / coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Single-file publish leftovers
+*.pdb
+*.deps.json
+*.runtimeconfig.json
